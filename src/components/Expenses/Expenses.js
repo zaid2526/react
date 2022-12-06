@@ -12,13 +12,13 @@ function Expenses(){
           date: new Date(2012, 4, 8),
         },
         {
-          id: "e1",
+          id: "e2",
           title: "CarInsurance2",
           amount: 980,
           date: new Date(2012, 4, 8),
         },
         {
-          id: "e1",
+          id: "e3",
           title: "CarInsurance3",
           amount: 980,
           date: new Date(2012, 4, 8),
@@ -36,8 +36,9 @@ function Expenses(){
           {
             expenses.map((expense) => {
               return (
-                <div>
+                <div id={expense.id}>
                   <ExpenseItem
+                    id={expense.id}
                     title={expense.title}
                     amount={expense.amount}
                     date={expense.date}
