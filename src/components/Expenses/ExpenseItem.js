@@ -12,11 +12,12 @@ function ExpenseItem(props) {
   const [amount, setAmount]=useState(props.amount)
   const eventHandler=()=>{
     // console.log('button clicked..!!!')
-    console.log('befor....',title);
+    // console.log('befor....',title);
     setTitle('updated'); // it is like an async function 
-    console.log("after", title)
+    // console.log("after", title)
     
   }
+  
   const deleteHandler=()=>{
     console.log('button clicked..!!!')
     const toDelete=document.getElementById(props.id);
