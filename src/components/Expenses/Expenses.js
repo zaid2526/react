@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+// import React, { useState } from 'react';
 
 import './Expenses.css'
 
@@ -26,7 +26,7 @@ function Expenses(props){
             props.expenses.map((expense) => {
               
               return (
-                <div id={expense.id}>
+                <div key={expense.id} id={expense.id}>
                   <ExpenseItem
                     id={expense.id}
                     title={expense.title}
