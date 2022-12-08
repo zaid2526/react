@@ -28,6 +28,7 @@ function ExpenseItem(props) {
   //   setAmount(100); // it is like an async function 
   // }
   return (
+    <li>
     <Card  className="expense-item">
       <ExpenseDate date={props.date}/>
       <div className="expense-item__description">
@@ -38,7 +39,7 @@ function ExpenseItem(props) {
       <button onClick={deleteHandler}>Delete</button>
       {/* <button onClick={updateAmount}>Update Amount</button> */}
     </Card>
-
+    </li>
  
   );
 }
